@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <!-- Header Layout -->
+
+        <!-- Checkbox for Register as Admin and User -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp"> <!-- Set margin to align with other elements -->
+
+            <!-- Checkbox for Admin -->
+            <CheckBox
+                android:id="@+id/chkAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register as Admin" />
+
+            <!-- Checkbox for User -->
+            <CheckBox
+                android:id="@+id/chkUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register as User"
+                android:layout_marginLeft="20dp"/> <!-- Add margin to separate from the previous checkbox -->
+
+        </LinearLayout>
+
+        <!-- Main Content Layout -->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Instruction Text -->
+            <TextView
+                android:layout_marginTop="19dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16.5sp"
+                android:text="Fill all field"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <!-- Name EditText -->
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="51dp"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:paddingLeft="20dp"
+                android:background="@drawable/round_border"
+                android:layout_gravity="center"
+                android:id="@+id/txtName"
+                android:layout_width="300dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:hint="Enter your name" />
+
+            <!-- EditTexts for Gmail, Username, Password, Confirm Password -->
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="51dp"
+                android:text="Gmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:paddingLeft="20dp"
+                android:background="@drawable/round_border"
+                android:layout_gravity="center"
+                android:id="@+id/txtGmail"
+                android:layout_width="300dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:hint="Enter your gmail" />
+
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="51dp"
+                android:text="Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:paddingLeft="20dp"
+                android:background="@drawable/round_border"
+                android:layout_gravity="center"
+                android:id="@+id/txtUsername"
+                android:layout_width="300dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:hint="Enter your username" />
+
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="51dp"
+                android:text="Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:paddingLeft="20dp"
+                android:background="@drawable/round_border"
+                android:layout_gravity="center"
+                android:id="@+id/txtPassword"
+                android:layout_width="300dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:hint="Enter your password" />
+
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginLeft="51dp"
+                android:text="Confirm Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+            <EditText
+                android:paddingLeft="20dp"
+                android:background="@drawable/round_border"
+                android:layout_gravity="center"
+                android:id="@+id/txtRePassword"
+                android:layout_width="300dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:hint="Confirm your password" />
+
+            <!-- Button -->
+            <LinearLayout
+                android:layout_margin="15dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <Button
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:id="@+id/btnAdd"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mybutton"
+                    android:text="ADD" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

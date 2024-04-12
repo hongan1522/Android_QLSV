@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".statistic.StatisticActivity">
+    <!-- Users Count -->
+    <!-- Add this line -->
+    android:layout_margin="4dp"/> <!-- Add this line -->
+
+    <!-- Teachers Count -->
+    <!-- Add this line -->
+    android:layout_margin="4dp"/> <!-- Add this line -->
+
+    <!-- Students Count -->
+    <!-- Add this line -->
+    android:layout_margin="4dp"/> <!-- Add this line -->
+
+    <!-- Subjects Count -->
+    <!-- Add this line -->
+    android:layout_margin="4dp"/> <!-- Add this line -->
+
+    <!-- Classes Count -->
+
+    <!-- Add this line -->
+    android:layout_margin="4dp"/> <!-- Add this line -->
+
+    <!-- Add this line -->
+    android:layout_margin="4dp"/> <!-- Add this line -->
+
+    <TextView
+        android:id="@+id/user_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Users: 50"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/student_count"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/student_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Students: 100"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/subject_count"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user_count" />
+
+    <TextView
+        android:id="@+id/subject_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Subjects: 20"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/student_count" />
+
+    <!-- Add this line -->
+    android:layout_margin="4dp"/> <!-- Add this line -->
+
+    <TextView
+        android:id="@+id/mark_average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Mark avg: 4.7"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/exam_count"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/student_count" />
+
+    <TextView
+        android:id="@+id/class_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Classes: 50"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/mark_average"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_count" />
+
+    <TextView
+        android:id="@+id/exam_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:background="@drawable/border"
+        android:padding="8dp"
+        android:text="Exams: 50"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subject_count" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="383dp"
+        android:layout_height="568dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mark_average"
+        app:layout_constraintVertical_bias="0.659" />
+</androidx.constraintlayout.widget.ConstraintLayout>

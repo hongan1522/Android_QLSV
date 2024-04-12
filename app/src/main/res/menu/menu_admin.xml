@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_student_manager"
+        android:title="Student Manager" />
+    <item
+        android:id="@+id/item_subject_manager"
+        android:title="Subject Manager" />
+    <item
+        android:id="@+id/item_class_manager"
+        android:title="Class Manager" />
+    <item
+        android:id="@+id/item_exam_manager"
+        android:title="Exam Manager" />
+    <item
+        android:id="@+id/item_user_manager"
+        android:title="User Manager" />
+    <item
+        android:id="@+id/item_lecturer_manager"
+        android:title="Lecturer Manger" />
+    <item
+        android:id="@+id/item_statistical"
+        android:title="Statistical" />
+    <item
+        android:id="@+id/item_logout"
+        android:title="Log Out" />
+</menu>

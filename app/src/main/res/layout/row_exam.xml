@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/exam_layout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="178dp">
+
+            <TextView
+                android:id="@+id/tv_exam_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+
+                android:layout_marginTop="20dp"
+                android:text="Exam_id 1"
+                android:textSize="20dp"
+                app:layout_constraintRight_toLeftOf="@+id/tv_exam_class_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_exam_class_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="50dp"
+                android:text="Class_id 1"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.738"
+                app:layout_constraintStart_toEndOf="@+id/tv_exam_id"
+                app:layout_constraintTop_toTopOf="@+id/tv_exam_id" />
+
+            <TextView
+                android:id="@+id/tv_exam_student_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="50dp"
+                android:text="Student_id 1"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.846"
+                app:layout_constraintStart_toEndOf="@+id/tv_exam_subject_id"
+                app:layout_constraintTop_toBottomOf="@+id/tv_exam_class_id" />
+
+            <TextView
+                android:id="@+id/tv_exam_subject_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:text="Subject_id 1"
+                android:textSize="20dp"
+                app:layout_constraintRight_toLeftOf="@+id/tv_exam_student_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_exam_id" />
+
+            <TextView
+                android:id="@+id/tv_exam_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="24dp"
+                android:text="9"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_exam_result"
+                app:layout_constraintTop_toBottomOf="@+id/tv_exam_subject_id" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:text="Mark ="
+                android:textSize="30dp"
+
+                app:layout_constraintEnd_toStartOf="@+id/tv_exam_mark"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_exam_subject_id" />
+
+            <TextView
+                android:id="@+id/tv_exam_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="104dp"
+                android:text="Pass"
+                android:textColor="#FF0000"
+                android:textSize="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_exam_student_id" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

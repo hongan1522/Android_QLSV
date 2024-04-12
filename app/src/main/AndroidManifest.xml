@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ltdd_9">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Log in"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/CustomBackground"
+        tools:targetApi="31">
+
+        <!-- LECTURER -->
+        <activity
+            android:name=".lecturer.LecturerActivity"
+            android:exported="false"
+            android:label="Lecturer Manager"
+            android:parentActivityName=".AdminActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".lecturer.UpdateLecturerActivity"
+            android:exported="false"
+            android:label="Update Lecturer"
+            android:parentActivityName=".lecturer.LecturerActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".lecturer.AddLecturerActivity"
+            android:exported="false"
+            android:label="Add Lecturer"
+            android:parentActivityName=".lecturer.LecturerActivity"
+            android:theme="@style/CustomBackground" />
+        <!-- ADMIN -->
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:label="Admin Page"
+            android:theme="@style/CustomBackground" />
+        <!-- Statistic -->
+        <activity
+            android:name=".statistic.StatisticActivity"
+            android:exported="false"
+            android:label="Statistic"
+            android:parentActivityName=".AdminActivity" />
+        <!-- EXAM -->
+        <activity
+            android:name=".exam.UpdateExamActivity"
+            android:exported="false"
+            android:label="Update Exam"
+            android:parentActivityName=".exam.ExamActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".exam.AddExamActivity"
+            android:exported="false"
+            android:label="Add Exam"
+            android:parentActivityName=".exam.ExamActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".exam.ExamActivity"
+            android:exported="false"
+            android:label="Exam Manager"
+            android:parentActivityName=".AdminActivity"
+            android:theme="@style/CustomBackground" />
+        <!-- SUBJECT -->
+        <activity
+            android:name=".subject.UpdateSubjectActivity"
+            android:exported="false"
+            android:label="Update Subject"
+            android:parentActivityName=".subject.SubjectActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".subject.AddSubjectActivity"
+            android:exported="false"
+            android:label="Add Subject"
+            android:parentActivityName=".subject.SubjectActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".subject.SubjectActivity"
+            android:exported="false"
+            android:label="Subject Manager"
+            android:parentActivityName=".AdminActivity"
+            android:theme="@style/CustomBackground" />
+        <!-- CLASS -->
+        <activity
+            android:name=".classes.ClassActivity"
+            android:exported="false"
+            android:label="Class Manager"
+            android:parentActivityName=".AdminActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".classes.AddClassActivity"
+            android:exported="false"
+            android:label="Add Class"
+            android:parentActivityName=".classes.ClassActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".classes.UpdateClassActivity"
+            android:exported="false"
+            android:label="Update Class"
+            android:parentActivityName=".classes.ClassActivity"
+            android:theme="@style/CustomBackground" />
+        <!-- STUDENT -->
+        <activity
+            android:name=".student.StudentActivity"
+            android:exported="false"
+            android:label="Student Manager"
+            android:parentActivityName=".AdminActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".student.UpdateStudentActivity"
+            android:exported="false"
+            android:label="Update Student"
+            android:parentActivityName=".student.StudentActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".student.AddStudentActivity"
+            android:exported="false"
+            android:label="Add Student"
+            android:parentActivityName=".student.StudentActivity"
+            android:theme="@style/CustomBackground" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false" />
+        <!-- ACCOUNT -->
+        <activity
+            android:name=".Account.DetailUserActivity"
+            android:label="Detail User"
+            android:parentActivityName=".UserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.UpdateDeleteUser"
+            android:label="Update User"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.AddShowUser"
+            android:label="Add User"
+            android:parentActivityName=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.RegisterActivity"
+            android:label="Register"
+            android:parentActivityName=".Account.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Account.LoginActivity"
+            android:label="Log in"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Account.ChangePasswordActivity"
+            android:exported="false"
+            android:label="Change password"
+            android:parentActivityName=".Account.DetailUserActivity"/>
+        <activity
+            android:name=".Account.AddUserActivity"
+            android:label="Add user"
+            android:exported="false"
+            android:parentActivityName=".AdminActivity"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+</manifest>
